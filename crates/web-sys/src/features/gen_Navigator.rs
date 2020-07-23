@@ -104,6 +104,14 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `CredentialsContainer`, `Navigator`*"]
     pub fn credentials(this: &Navigator) -> CredentialsContainer;
+    #[cfg(feature = "Hid")]
+    # [ wasm_bindgen ( structural , method , getter , js_class = "Navigator" , js_name = hid ) ]
+    #[doc = "Getter for the `hid` field of this object."]
+    #[doc = ""]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/hid)"]
+    #[doc = ""]
+    #[doc = "*This API requires the following crate features to be activated: `Hid`, `Navigator`*"]
+    pub fn hid(this: &Navigator) -> Hid;
     #[cfg(web_sys_unstable_apis)]
     #[cfg(feature = "Clipboard")]
     # [ wasm_bindgen ( structural , method , getter , js_class = "Navigator" , js_name = clipboard ) ]
